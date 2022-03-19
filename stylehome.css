@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+}
+
+/*===== Colores =====*/
+:root {
+  --first-color:grey;
+  --dark-color: black;
+  --dark-color-alt: #cdcdcd;
+  --white-color: whitesmoke;
+}
+
+/*===== Fuente y tipografia =====*/
+:root {
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+}
+
+ /* CODES FOR HTML AND BODY*/
+ 
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+
+    /* CODES FOR ANIMATION*/
+     .Name{
+  
+      animation: transitionIn 1s;
+    }
+
+
+      @keyframes transitionIn {
+  
+      from {
+    
+        opacity: 0;
+        transform: rotateX(-10deg);
+    
+      }
+  
+      to {
+    
+        opacity: 1;
+        transform: rotateX(0);
+    
+      }
+    }
+
+
+    .smiley{
+  
+      animation: transitionIn 2s;
+    }
+
+
+      @keyframes transitionIn {
+  
+      from {
+    
+        opacity: 0;
+        transform: rotateX(-10deg);
+    
+      }
+  
+      to {
+    
+        opacity: 1;
+        transform: rotateX(0);
+    
+      }
+    }
+
+
+        /* CODES FOR HEADER*/
+
+      #header{
+        margin-bottom:80px;
+
+      }
+      #header .Name{
+        margin-bottom:10px;
+        font-size: 25px;
+
+      }
+      .avatar img {
+        margin-top: -100px;
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+      }
+
+
+    
+     /* CODES FOR ANIMATION*/
+    
+    body {
+        
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #031321;
+      font-family: var(--body-font);     
+      font-size: var(--normal-font-size); 
+      color: #cdcdcd;  
+      
+        
+    }
+     
+    a {
+      margin-top: 300px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      position: absolute;
+      display: inline-block;
+      padding: 30px 30px;
+      color: #cdcdcd;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      overflow: hidden;
+      transform: 0.2s;    
+    }
+    
+     a:hover {
+      
+      color: green;
+      background:lightblue;
+      box-shadow: 0 0 5px lightblue, 0 0 10px darkblue, 0 0 20px grey;
+      transition-delay: 1.5s;
+    }
+    
+    a span {
+      
+      position: absolute;
+      display: block;
+      
+    }
+    
+    a span:nth-child(1) {
+      
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg,transparent,lightblue);
+      
+    }
+      
+    a:hover span:nth-child(1) {
+      
+      left: 100%;
+      transition: 1s;
+    }
+    
+    
+    a span:nth-child(3) {
+      
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg,transparent,darkblue);
+      
+    }
+      
+    a:hover span:nth-child(3) {
+      
+      right: 100%;
+      transition: 1s;
+      transition-delay: 0.5s;
+    }
+    
+    a span:nth-child(2) {
+      
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg,transparent,lightblue);
+      
+    }
+      
+    a:hover span:nth-child(2) {
+      
+      top: 100%;
+      transition: 1s;
+      transition-delay: 0.25s;
+    }
+    
+    a span:nth-child(4) {
+      
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg,transparent,darkblue);
+      
+    }
+      
+    a:hover span:nth-child(4) {
+      
+      bottom: 100%;
+      transition: 1s;
+      transition-delay: 0.75s;
+    }
+
+
+
+    @media screen and (max-width:768px){
+    a {
+      border: 1px solid white;    
+    }
+
+}
+
+  /* On smaller screens, decrease text size */
+@media screen and (max-width: 425px) {
+
+    a {
+      border: 1px solid white;    
+    }
+}
+
+
+
+
+
+
+  /* On smaller screens, decrease text size */
+@media screen and (max-width: 375px) {
+
+    a {
+      border: 1px solid white;
+
+    }
+}

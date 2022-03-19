@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+}
+
+/*===== Colores =====*/
+:root {
+  --first-color:grey;
+  --dark-color: black;
+  --dark-color-alt: #cdcdcd;
+  --white-color: whitesmoke;
+}
+
+/*===== Fuente y tipografia =====*/
+:root {
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+}
+
+ /* CODES FOR HTML AND BODY*/
+ 
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+
+
+
+    /* CODES FOR ANIMATION*/
+     .Name{
+  
+      animation: transitionIn 1s;
+    }
+
+
+      @keyframes transitionIn {
+  
+      from {
+    
+        opacity: 0;
+        transform: rotateX(-10deg);
+    
+      }
+  
+      to {
+    
+        opacity: 1;
+        transform: rotateX(0);
+    
+      }
+    }
+
+
+    .smiley{
+  
+      animation: transitionIn 2s;
+    }
+
+
+      @keyframes transitionIn {
+  
+      from {
+    
+        opacity: 0;
+        transform: rotateX(-10deg);
+    
+      }
+  
+      to {
+    
+        opacity: 1;
+        transform: rotateX(0);
+    
+      }
+    }
+
+        /* CODES FOR HEADER*/
+
+      #header{
+        margin-bottom:80px;
+
+      }
+      #header .Name{
+        margin-bottom:10px;
+        font-size: 25px;
+
+      }
+      .avatar img {
+        margin-top: 150px;
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        margin-bottom: 20px;
+      }
+        
+
+    .profile {
+      background:whitesmoke;
+      padding: 30px;
+      font-size: 18px;
+      margin-bottom: 10px;
+      margin: 0 150px 60px 150px;
+      border-radius: 5px;
+      font-weight:100;
+      color: black;
+    }
+
+
+    .profile .h1 {
+      text-align: left;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .profile .paragraph1 .a {
+      margin-bottom: 10px;
+    }
+	
+
+
+  /* On Larger screens, increase text size */
+@media screen and (max-width: 1440px) {
+      body {
+      color: #cdcdcd;
+      background: #031321;
+      font-family: var(--body-font);  
+      font-size: var(--normal-font-size);   
+      }
+
+   }
+
+  /* On Larger screens, increase text size */
+@media screen and (max-width: 1024px) {
+      body {
+      color: #cdcdcd;
+      background: #031321;
+      font-family: var(--body-font); 
+      font-size: var(--normal-font-size);    
+      }
+}
+
+@media screen and (max-width:768px){
+
+      body {
+      color: #cdcdcd;
+      background: #031321;
+      font-family: var(--body-font);     
+      font-size: var(--normal-font-size);
+      }
+
+    /*CODES FOR CONTENTS*/
+
+   .profile {
+      padding: 20px;
+      font-size: 18px;
+      margin-bottom: 10px;
+      margin: 0 10px 60px 10px;
+      border-radius: 20px;
+    }
+
+
+    .profile .h1 {
+      font-size: 25px;
+    }
+    .profile .paragraph1 {
+      font-size: 18px;
+
+    }    
+}
+
+  /* On smaller screens, decrease text size */
+@media screen and (max-width: 425px) {
+      body {
+      color: #cdcdcd;
+      background: #031321;
+      font-family: var(--body-font); 
+      font-size: var(--normal-font-size);    
+      }
+}
+
+
+  /* On smaller screens, decrease text size */
+@media screen and (max-width: 375px) {
+      body {
+      color: #cdcdcd;
+      background: #031321;
+      font-family: var(--body-font); 
+      font-size: var(--normal-font-size);    
+      }
+
+}
